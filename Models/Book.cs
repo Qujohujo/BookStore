@@ -33,5 +33,8 @@ namespace BookStore.Models
         [Required]
         [RegularExpression(@"^\d+\.\d{0,2}$", ErrorMessage = "Please enter a valid currency.")]
         public decimal Price { get; set; }
+
+        [Required]
+        public ushort Pages { get; set; }
     }
 }

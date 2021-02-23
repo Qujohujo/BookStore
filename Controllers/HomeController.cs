@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BookStore.Models;
+using BookStore.Models.ViewModels;
 
 namespace BookStore.Controllers
 {
@@ -15,6 +16,8 @@ namespace BookStore.Controllers
 
         private IBookStoreRepository _repository;
 
+        public int PageSize = 5;
+
         //passes existing repository into a private variable to prevent new setting
         public HomeController(ILogger<HomeController> logger, IBookStoreRepository repository)
         {
@@ -23,9 +26,21 @@ namespace BookStore.Controllers
         }
 
         //Every time a use accesses the webpage, pass index the private repository 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            return View(_repository.Books);
+            return View(new BookListViewModel
+            {
+                Books = _repository.Books
+                    .OrderBy(b => b.BookId)
+                    .Skip((page - 1) * PageSize)
+                    .Take(PageSize),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = page,
+                    ItemsPerPage = PageSize,
+                    TotalNumItems = _repository.Books.Count()
+                }
+            });
         }
 
         public IActionResult Privacy()

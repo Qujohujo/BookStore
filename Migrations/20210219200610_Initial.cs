@@ -17,7 +17,8 @@ namespace BookStore.Migrations
                     Publisher = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ISBN = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Pages = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
