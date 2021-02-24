@@ -16,7 +16,10 @@ namespace BookStore.Models
         public string Title { get; set; }
 
         [Required]
-        public string Author { get; set; }
+        public string AuthorFirstName { get; set; }
+
+        [Required]
+        public string AuthorLastName { get; set; }
 
         [Required]
         public string Publisher { get; set; }
@@ -25,6 +28,9 @@ namespace BookStore.Models
         [Required]
         [RegularExpression(@"^(97(8|9))?\d{9}(\d|X)$", ErrorMessage = "Please enter a valid ISBN.")]
         public string ISBN { get; set; }
+
+        [Required]
+        public string Classification { get; set; }
 
         [Required]
         public string Category { get; set; }

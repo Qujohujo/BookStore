@@ -26,10 +26,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Les Miserables",
-                        Author = "Victor Hugo",
+                        AuthorFirstName = "Victor",
+                        AuthorLastName = "Hugo",
                         Publisher = "Signet",
                         ISBN = "978-0451419439",
-                        Category = "Fiction, Classic",
+                        Classification = "Fiction",
+                        Category = "Classic",
                         Price = 9.95M,
                         Pages = 1488,
                     },
@@ -37,10 +39,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Team of Rivals",
-                        Author = "Doris Kearns Goodwin",
+                        AuthorFirstName = "Doris Kearns",
+                        AuthorLastName = "Goodwin",
                         Publisher = "Simon & Schuster",
                         ISBN = "978-0743270755",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 14.58M,
                         Pages = 944,
                     },
@@ -48,10 +52,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "The Snowball",
-                        Author = "Alice Schroeder",
+                        AuthorFirstName = "Alice",
+                        AuthorLastName = "Schroeder",
                         Publisher = "Bantam",
                         ISBN = "978-0553384611",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 21.54M,
                         Pages = 832,
                     },
@@ -59,10 +65,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "American Ulysses",
-                        Author = "Ronald C. White",
+                        AuthorFirstName = "Ronald C.",
+                        AuthorLastName = "White",
                         Publisher = "Random House",
                         ISBN = "978-0812981254",
-                        Category = "Non-Fiction, Biography",
+                        Classification = "Non-Fiction",
+                        Category = "Biography",
                         Price = 11.61M,
                         Pages = 864,
                     },
@@ -70,10 +78,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Unbroken",
-                        Author = "Laura Hillenbrand",
+                        AuthorFirstName = "Laura",
+                        AuthorLastName = "Hillenbrand",
                         Publisher = "Random House",
                         ISBN = "978-0812974492",
-                        Category = "Non-Fiction, Historical",
+                        Classification = "Non-Fiction",
+                        Category = "Historical",
                         Price = 13.33M,
                         Pages = 528,
                     },
@@ -81,10 +91,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "The Great Train Robbery",
-                        Author = "Michael Crichton",
+                        AuthorFirstName = "Michael",
+                        AuthorLastName = "Crichton",
                         Publisher = "Vintage",
                         ISBN = "978-0804171281",
-                        Category = "Fiction, Historical Fiction",
+                        Classification = "Fiction",
+                        Category = "Historical Fiction",
                         Price = 15.95M,
                         Pages = 288,
                     },
@@ -92,10 +104,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Deep Work",
-                        Author = "Cal Newport",
+                        AuthorFirstName = "Cal",
+                        AuthorLastName = "Newport",
                         Publisher = "Grand Publishing Central",
                         ISBN = "978-1455586691",
-                        Category = "Non-Fiction, Self-Help",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
                         Price = 14.99M,
                         Pages = 304,
                     },
@@ -103,10 +117,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "It's Your Ship",
-                        Author = "Michael Abrashoff",
+                        AuthorFirstName = "Michael ",
+                        AuthorLastName = "Abrashoff",
                         Publisher = "Grand Publishing Central",
                         ISBN = "978-1455523023",
-                        Category = "Non-Fiction, Self-Help",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
                         Price = 21.66M,
                         Pages = 240,
                     },
@@ -114,10 +130,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "The Virgin Way",
-                        Author = "Richard Branson",
+                        AuthorFirstName = "Richard",
+                        AuthorLastName = "Branson",
                         Publisher = "Portfolio",
                         ISBN = "978-1591847984",
-                        Category = "Non-Fiction, Business",
+                        Classification = "Non-Fiction",
+                        Category = "Business",
                         Price = 29.16M,
                         Pages = 400,
                     },
@@ -125,10 +143,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Sycamore Row",
-                        Author = "John Grisham",
+                        AuthorFirstName = "John",
+                        AuthorLastName = "Grisham",
                         Publisher = "Bantam",
                         ISBN = "978-0553393613",
-                        Category = "Fiction, Thrillers",
+                        Classification = "Fiction",
+                        Category = "Thrillers",
                         Price = 15.03M,
                         Pages = 642,
                     },
@@ -136,10 +156,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "Mistborn",
-                        Author = "Brandon Sanderson",
+                        AuthorFirstName = "Brandon",
+                        AuthorLastName = "Sanderson",
                         Publisher = "Tor Books",
                         ISBN = "978-0575089914",
-                        Category = "Fiction, Fantasy",
+                        Classification = "Fiction",
+                        Category = "Fantasy",
                         Price = 12.56M,
                         Pages = 541,
                     },
@@ -147,10 +169,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "How to Win Friends and Influence People",
-                        Author = "Dale Carnegie",
+                        AuthorFirstName = "Dale",
+                        AuthorLastName = "Carnegie",
                         Publisher = "Simon and Schuster",
                         ISBN = "978-0671027032",
-                        Category = "Non-Fiction, Self-Help",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
                         Price = 17.99M,
                         Pages = 291,
                     },
@@ -158,10 +182,12 @@ namespace BookStore.Models
                     new Book
                     {
                         Title = "The Way of Kings",
-                        Author = "Brandon Sanderson",
+                        AuthorFirstName = "Brandon",
+                        AuthorLastName = "Sanderson",
                         Publisher = "Tor Books",
                         ISBN = "978-0575102484",
-                        Category = "Fiction, Epic Fantasy",
+                        Classification = "Fiction",
+                        Category = "Epic Fantasy",
                         Price = 9.59M,
                         Pages = 1007,
                     }
