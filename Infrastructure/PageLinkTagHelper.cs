@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Infrastructure
 {
+    //this states a name to refer to from the html side
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {
@@ -38,7 +39,7 @@ namespace BookStore.Infrastructure
         public string PageClassSelected { get; set; }
 
 
-
+        //dynamically writes html code here from the information passed to it
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
@@ -52,6 +53,7 @@ namespace BookStore.Infrastructure
 
                 if (PageClassesEnabled)
                 {
+                    //add Css capabilities if the page exists
                     tag.AddCssClass(PageClass);
                     tag.AddCssClass(i == PageModel.CurrentPage ? PageClassSelected : PageClassNormal);
                 }
