@@ -2,7 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
-@model IQueryable<Book>
+@model BookListViewModel
+
+<!--
+Bootstrap commands:
+    d-flex, justify-content-center, p-2, bg-light
+-->
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
@@ -10,16 +16,20 @@
 </div>
 
 <!--For each instance in the model, display all relevant info (all of which is required)--> 
-@foreach (var b in Model)
+@foreach (var b in Model.Books)
 {
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">
+        <li class="list-group-item bg-light">
             <h5>@b.Title</h5>
             <p>By @b.Author</p>
             <span>@b.Publisher</span>
             <p>@b.Category</p>
             <small>@b.ISBN</small>
+            <br>
+            <small>@b.Pages Pages</small>
             <p>$@b.Price</p>
         </li>
     </ul>
 }
+
+<div class="p-2 d-flex justify-content-center" page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-secondary" page-class-selected="btn-primary"></div>
