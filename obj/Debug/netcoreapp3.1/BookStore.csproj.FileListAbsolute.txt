@@ -77,3 +77,5 @@ C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStor
 C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
 C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\scopedcss\bundle\BookStore.styles.css
+C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\BookSummary.cshtml.g.cs
+C:\Users\quinn\source\repos\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs

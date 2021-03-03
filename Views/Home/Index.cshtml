@@ -18,18 +18,7 @@ Bootstrap commands:
 <!--For each instance in the model, display all relevant info (all of which is required)--> 
 @foreach (var b in Model.Books)
 {
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item bg-light">
-            <h5>@b.Title</h5>
-            <p>By @b.AuthorFirstName @b.AuthorLastName</p>
-            <span>@b.Publisher</span>
-            <p>@b.Classification, @b.Category</p>
-            <small>@b.ISBN</small>
-            <br>
-            <small>@b.Pages Pages</small>
-            <p>$@b.Price</p>
-        </li>
-    </ul>
+    <partial name="BookSummary" model="b" />
 }
 
-<div class="p-2 d-flex justify-content-center" page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-secondary" page-class-selected="btn-primary"></div>
+<div class="p-2 d-flex justify-content-center" page-model="@Model.PagingInfo" page-url-category="@Model.CurrentCategory" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-secondary" page-class-selected="btn-primary"></div>

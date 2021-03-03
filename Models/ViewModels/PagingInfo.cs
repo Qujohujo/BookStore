@@ -7,6 +7,7 @@ namespace BookStore.Models.ViewModels
 {
     public class PagingInfo
     {
+        //info to get from controller, pass to view as defaults for the structure of the page
         public int TotalNumItems { get; set; }
         public int ItemsPerPage { get; set; }
         public int CurrentPage { get; set; }
