@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - BookStore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -16,6 +17,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
@@ -24,7 +26,12 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
                     </ul>
+
+                    <div class="col-10 text-right">
+                        <vc:cart-summary />
+                    </div>
                 </div>
             </div>
         </nav>
